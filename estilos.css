@@ -1,0 +1,370 @@
+body{
+
+    
+    font-family: 'Poppins'; /*Se difine el tipo de fuente fuente*/
+    margin: 0;
+    padding: 0;
+}
+
+p { /*Se define el tamaño de fuente*/
+font-size: 26px; /*Se define el tamaño de fuente*/
+}
+
+li{ 
+    
+    list-style: none;/*Quitar punto de listas desordenadas*/
+    margin-right: 25px; /*Dar espaciado hacia la derecha*/
+}
+
+.menu{ 
+    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
+    justify-content: space-between; /*Justificar el contenido*/
+    align-items: center; /*Alineamos hacia el centro*/
+    font-weight: bold;
+}
+
+.lista{
+    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
+}
+
+a{
+    text-decoration: none;/*De esta forma quitamos el decorado a los enlaces*/
+    color: black; /*Cambiar de color al texto del enlace*/
+   
+}
+
+.titular{
+    text-align: center; /*De esta forma alineamos el texto*/
+    margin-top: 200px; /*Bajamos los elementos*/
+}
+
+h1{
+    font-size: 60px; /*Se define el tamaño de fuente*/
+    margin: 0; /*Eliminamos el margen a todos los lados*/
+}
+
+h2{
+    font-size: 25px;/*Se define el tamaño de fuente*/
+    margin-bottom: 40px;/*lo podemos utilizar para bajar elementos, dando espaciado hacia abajo inteno, 
+    en este caso nos vaja el boton*/
+}
+
+ a{
+    font-size: 14px; /*Se define el tamaño de fuente*/
+    background: #5cb8ff; /*Se define color de fondo del boton*/
+    padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
+    color: rgb(13, 13, 13); /*Se define color de fuente*/
+}
+
+.lista a {
+    background: hsl(210, 85%, 65%); /*Se define color de fondo del boton*/
+    padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
+}
+
+header{
+    background: url(recursos/fondo12.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%; /*Se define el ancho del contenedor*/
+    margin: auto;
+    
+   
+}
+
+/* ARRANCA SECCION SOBRE MI ---------------------------------------------*/
+/*display aline blok, me permite poner elementos en linea en bloke para poderlos trabajar
+O podemos utilizar margin boton al parrafo final para qeu baje el elemento*/
+
+
+h3{
+   text-align: center; /*De esta forma alineamos el texto*/
+   font-size: 55px; /*Se define el tamaño de fuente*/
+   font-weight: bold;   /*Se determina la negrita--bold negrita-*/
+}
+
+.contenedor-sobremi{
+    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
+    justify-content: space-around; /*Justificar el contenido*/
+    align-items: center; /*Alineamos hacia el centro-uno al lado del otro*/
+}
+
+.contenedor-parrafo-y-boton{
+    width: 50%; /*Se define el ancho del contenedor- para poder separar en ancho*/
+}
+
+.contenedor-parrafo-y-boton p{ /*la etiqueta p en esta clase solo cambiara el tamaño de fuente*/
+   font-size: 26px;
+}
+
+.parrafo-final{
+    margin-bottom: 30px;
+}
+
+/*ARRANCA SECCION SERVICIOS----------------------*/
+
+
+.contenedor-servicios{
+    display: flex;  /*Nos permite ubicar un elemento a lado del otro*/
+    flex-wrap: wrap;  /*DebE ir acompañado con display flex, para determinar cuantos elementos se visualizan por fila*/
+    justify-content: space-around;  /*Me permite separar en este caso las columnas una de otra */
+}
+
+.servicio{
+    width: 25%;  /*Se detemina el ancho de los elemento que van  por fila, y nos permite saber cauntos elementos se vusualizaen en la fila*/
+    padding: 55px 38px 55px 38px;  /*Es el espaciado interno de un elemento*/
+    border-radius: 10px;  /*borde redondeado de un elemento*/
+    margin-bottom: 40px;  /*Nos permite separar un elemento de otro, dando un espaciada hacia abajo*/
+    color: #fff;  /*Color de fuente*/
+}
+
+.violeta{
+    background:#5055df ;  /*Color de fondo*/
+}
+
+.celeste{
+    background:#40a8fa ; /*Color de fondo*/
+}
+
+.servicio h4{
+    font-size: 30px;  /*Se define el tamaño de fuente*/
+    margin: 0; /*Se deja el margen en 0, para quitar los espacios */
+}
+
+.servicio img{
+    float: right;  /*De esta forma movemos el icono hacia la derecha*/
+}
+
+.servicio p{
+    font-size: 26px;  /*Se define el tamaño de fuente*/
+    height: 200px; /*De esta forma los iconos tienen una altura fija.*/
+}
+
+span{
+    font-size: 80px; /*Es para que crescan las flechas del carousel*/
+    color: blue;
+}
+
+.owl-nav{
+    text-align: center; /*Para centrar las felchas del carousel*/
+}
+
+/* ARRANCA SECCION POR QUE  TRABAJAR CONMIGO --------------------------------------------------- */
+
+.contenedor-porque{
+    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
+    justify-content: space-around; /*Me permite separar en este caso las columnas una de otra */
+    text-align: center; /*Me permite centrar el texto */
+}
+
+.contenedor-porque h4{
+    margin: 0; /*Se deja el margen en 0, para quitar los espacios */
+    font-size: 20px; /*Tamaño de fuente */
+}
+
+.contenedor-porque p{
+    font-size: 16px; /*Tamaño de fuente */
+    line-height: 28px;  /*Se define el alto de linea en los parrafos */
+} 
+
+.porque-singular{
+    width: 95%;  /*Se detemina el ancho de los elemento que van  por fila, y nos permite saber cauntos elementos se vusualizaen en la fila*/
+}
+
+/* ARRANCA SECCION BLOG */
+
+#blog{
+    background: #F9FAFC; /*Color de fondo*/
+    padding-top: 50px; /*Nos da un espacion en la parte superior*/
+    padding-bottom: 50px;
+}
+
+.contenedor-publicaciones{
+    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
+    justify-content: space-around; /*Me permite separar en este caso las columnas una de otra */
+}
+
+.publicacion{ 
+    width: 30%;  /*Se detemina el ancho de los elemento que van  por fila, y nos permite saber cauntos elementos se vusualizaen en la fila*/
+    box-shadow: 1px 1px 14px #ccc;  /*Nos da el efecto de sombra*/
+    padding-bottom: 20px;
+}
+
+#blog img{
+    width: 100%; /*Nos ubica las imagenes al 100% de todo el div*/
+}
+
+#blog h4{
+    font-size: 23px; /*Tamaño de fuente*/
+    margin: 0; /*Quitar su margen por defecto*/
+    padding: 20px ; /*Le ponemos pading a todos los lados*/
+   
+}
+
+#blog p{
+    color: #5a6169; /*Color de texto*/
+    line-height: 24px; /*Separamos las lineas de los parrafos, altura*/
+    font-size: 16px; /*Tamaño de fuente*/
+    padding:10px 20px 20px 20px;  /*Le ponemos pading a todos los lados--Color verde*/
+    margin: 0;  /*Quitar su margen por defecto -Color naranja*/
+}
+
+#blog a{
+    display: inline-block; /*Cambiamos de elememto en linea a elemento en bloque*/
+    margin-left: 20px; /*Margen a la izquierda, para ponerlo al mismo nivel del texto*/
+}
+
+.publicacion-segunda img{
+    height: 223px; /*Se define el alto de la imagen para que este al igual tamaño que la otra*/
+
+}
+
+.primer-parafo{
+    padding: 0px 20px 20px 20px !important;
+}
+
+/* ARRANCA SECCION FINAL */
+
+#que-esperas{
+    background: linear-gradient(rgba(84,93,220,.94),rgba(96,171,245,.9));
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#que-esperas h3{
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#que-esperas a{
+    padding: 15px 45px 15px 45px;
+    transition: 1s;
+}
+
+#que-esperas a:hover{
+    color: black;
+    transition: 1s;
+    transform: scale(1.4);
+    display: inline-block;
+    
+}
+
+#instagram a{
+    background: none;
+    position: fixed;
+    top: 70%;
+    right: 1%;
+
+}
+
+#whatsapp a{
+    background: none;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 800px){
+    /*SE VA APLICAR CUANDO EL MAXIMO DE ANCHO SEA DE 480 PX*/
+   nav{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    background:#5cb8ff ;
+    width: 100%;
+    display: none;
+   }
+
+   nav .lista{
+    flex-direction: column;
+   }
+
+   .menu-icon{
+    display: block;
+    width: 25px;
+}
+
+.titular{
+    margin-top: 54px;
+}
+
+h1{
+    font-size: 49px;
+}
+
+h2{
+    font-size: 19px;
+}
+
+.contenedor-sobremi{
+    flex-direction: column;
+}
+
+.contenedor-parrafo-y-boton {
+    width: 90%;
+}
+
+.contenedor-servicios{
+    flex-direction: column;
+}
+
+.servicio{
+    width: 72%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+h3{
+    font-size:46px;
+}
+
+.contenedor-porque{
+    flex-direction: column;
+}
+
+.porque-singFar{
+    width: 95%;
+}
+
+.contenedor-publicaciones{
+    flex-direction: column;
+}
+
+.publicacion{
+    width: 85%;
+    margin: auto;
+}
+
+.imagen-sobremi{
+    width: 90%;
+}
+
+}
+
+
+@media(min-width:700px) and (max-width:900px){
+
+    header{
+        height: 53vh;
+    }
+
+    .imagen-sobremi{
+        width: 50%;
+    }
+
+    .servicio{
+        width: 44%;
+    }
+
+    .publicacion{
+        width: 62%;
+    }
+}
