@@ -121,6 +121,10 @@ h3{
     color: #fff;  /*Color de fuente*/
 }
 
+.servicio blanco{
+    background:#6aeef1e0 ;  /*Color de fondo*/ 
+}
+
 .violeta{
     background:#f11212 ;  /*Color de fondo*/
 }
