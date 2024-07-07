@@ -1,4 +1,4 @@
-    body{
+body{
     
     font-family: 'Poppins'; /*Se difine el tipo de fuente fuente*/
     margin: 0;
@@ -26,11 +26,7 @@ li{
     display: flex; /*Nos permite ubicar un elemento a lado del otro*/
 }
 
-a{
-    text-decoration: none;/*De esta forma quitamos el decorado a los enlaces*/
-    color: black; /*Cambiar de color al texto del enlace*/
-   
-}
+
 
 .titular{
     text-align: center; /*De esta forma alineamos el texto*/
@@ -48,16 +44,24 @@ h2{
     en este caso nos vaja el boton*/
 }
 
- a{
+a{
+    list-style: none;/*Quitar punto de listas desordenadas*/
+    text-decoration: none;/*De esta forma quitamos el decorado a los enlaces*/
+    color: black; /*Cambiar de color al texto del enlace*/
+    margin-right: 25px; /*Dar espaciado hacia la derecha*/
+    border-radius: 10px;  /*borde redondeado de un elemento*/
     font-size: 14px; /*Se define el tamaño de fuente*/
-    background: #5cb8ff; /*Se define color de fondo del boton*/
+    background: hsl(210, 85%, 65%); /*Se define color de fondo del boton 210*/
     padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
-    color: rgb(13, 13, 13); /*Se define color de fuente*/
+   
 }
 
-.lista a {
-    background: hsl(210, 85%, 65%); /*Se define color de fondo del boton*/
-    padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
+
+                  /* Se realizaron */
+.lista a { 
+    background: hsl(210, 85%, 65%); /*Se define color de fondo del boton 210*/
+    padding: 6px 10px 6px 10px; /*Se define tamaño interno del boton*/
+    border-radius: 10px;  /*borde redondeado de un elemento*/
 }
 
 header{
@@ -96,7 +100,7 @@ h3{
 }
 
 .contenedor-parrafo-y-boton p{ /*la etiqueta p en esta clase solo cambiara el tamaño de fuente*/
-   font-size: 26px;
+   font-size: 20px;
 }
 
 .parrafo-final{
@@ -138,7 +142,7 @@ h3{
 }
 
 .servicio p{
-    font-size: 26px;  /*Se define el tamaño de fuente*/
+    font-size: 20px;  /*Se define el tamaño de fuente*/
     height: 200px; /*De esta forma los iconos tienen una altura fija.*/
 }
 
@@ -268,22 +272,24 @@ span{
 }
 
 .menu-icon{
-    display: none;
+    display: none; /*Se oculta un elemento, en este caso el icono del menu*/
 }
+
+/* Este es el codigo para el responsive para el menu de navegacion */
 
 @media (max-width: 800px){
     /*SE VA APLICAR CUANDO EL MAXIMO DE ANCHO SEA DE 480 PX*/
    nav{
-    position: absolute;
-    top: 70px;
-    left: 0px;
-    background:#5cb8ff ;
-    width: 100%;
+    position: absolute; /*Se posiciona el menu de una forma absoluta*/
+    top: 70px;         /*Se da un espaciado hacia abajo para bajar un poco los elementos*/
+    left: 0px;       /*Se posiciona hacia la hizquierda*/
+    background:#5cb8ff ; /*Se define el color de fondo*/
+    width: 100%;           /*Se define el ancho del color background*/
     display: none;
    }
 
    nav .lista{
-    flex-direction: column;
+    flex-direction: column; /*Se define los elementos en columna*/
    }
 
    .menu-icon{
@@ -302,36 +308,44 @@ h1{
 h2{
     font-size: 19px;
 }
-
+    /*Seccion sobr me*/
 .contenedor-sobremi{
-    flex-direction: column;
+    flex-direction: column; /*Para que los elementos esten uno debajo del otro*/
 }
 
 .contenedor-parrafo-y-boton {
-    width: 90%;
+    width: 90%;         /*De detine el ancho*/
 }
-
+/*Seccion servicios*/
 .contenedor-servicios{
-    flex-direction: column;
+    flex-direction: column;/*Para que los elementos esten uno debajo del otro*/
 }
 
 .servicio{
+    /*Cuando le damos una acho a algo, atomaticamente se va hacia la derecha
+    pero lo centramos con margin auto*/
     width: 72%;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /*Lo tutilizamos pra separar un poco las tarjetas*/
 }
+
+/*Seccion mis trabajos*/
 
 h3{
     font-size:46px;
 }
 
+/*Seccion mis trabajos*/
+
 .contenedor-porque{
-    flex-direction: column;
+    flex-direction: column; /*Para que los elementos esten uno debajo del otro*/
 }
 
-.porque-singFar{
+.porque-singular{
     width: 95%;
 }
+
+/*Seccion blog*/
 
 .contenedor-publicaciones{
     flex-direction: column;
@@ -348,8 +362,8 @@ h3{
 
 }
 
-
-@media(min-width:700px) and (max-width:900px){
+/*responsive para ipad*/
+@media(min-width:700px) and (max-width:900px){ 
 
     header{
         height: 53vh;

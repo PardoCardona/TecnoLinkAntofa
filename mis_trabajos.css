@@ -27,11 +27,7 @@ li{
     display: flex; /*Nos permite ubicar un elemento a lado del otro*/
 }
 
-a{
-    text-decoration: none;/*De esta forma quitamos el decorado a los enlaces*/
-    color: black; /*Cambiar de color al texto del enlace*/
-   
-}
+
 
 .titular{
     text-align: center; /*De esta forma alineamos el texto*/
@@ -49,16 +45,24 @@ h2{
     en este caso nos vaja el boton*/
 }
 
- a{
+a{
+    list-style: none;/*Quitar punto de listas desordenadas*/
+    text-decoration: none;/*De esta forma quitamos el decorado a los enlaces*/
+    color: black; /*Cambiar de color al texto del enlace*/
+    margin-right: 25px; /*Dar espaciado hacia la derecha*/
     font-size: 14px; /*Se define el tamaño de fuente*/
     background: #5cb8ff; /*Se define color de fondo del boton*/
     padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
-    color: rgb(13, 13, 13); /*Se define color de fuente*/
+    border-radius: 10px;  /*borde redondeado de un elemento*/
+   
 }
 
+ 
+
 .lista a {
-    background: #5af270; /*Se define color de fondo del boton*/
-    padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
+    background: hsl(210, 85%, 65%); /*Se define color de fondo del boton 210*/
+    padding: 6px 10px 6px 10px; /*Se define tamaño interno del boton*/
+    border-radius: 10px;  /*borde redondeado de un elemento*/
 }
 
 header{
@@ -97,7 +101,7 @@ h3{
 }
 
 .contenedor-parrafo-y-boton p{ /*la etiqueta p en esta clase solo cambiara el tamaño de fuente*/
-   font-size: 26px;
+   font-size: 20px;
 }
 
 .parrafo-final{
@@ -134,12 +138,12 @@ h3{
     margin: 0; /*Se deja el margen en 0, para quitar los espacios */
 }
 
-.servicio img{
+.servicio a{
     float: right;  /*De esta forma movemos el icono hacia la derecha*/
 }
 
 .servicio p{
-    font-size: 26px;  /*Se define el tamaño de fuente*/
+    font-size: 20px;  /*Se define el tamaño de fuente*/
     height: 200px; /*De esta forma los iconos tienen una altura fija.*/
 }
 
@@ -330,7 +334,7 @@ h3{
     flex-direction: column;
 }
 
-.porque-singFar{
+.porque-singular{
     width: 95%;
 }
 
