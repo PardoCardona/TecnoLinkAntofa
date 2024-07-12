@@ -5,14 +5,17 @@ body{
     padding: 0;
 }
 
-p { /*Se define el tamaño de fuente*/
-font-size: 26px; /*Se define el tamaño de fuente*/
+header{
+    background: url(recursos/fondo12.jpg);
+    height: 100vh;
+    background-size: cover;
 }
 
-li{ 
-    
-    list-style: none;/*Quitar punto de listas desordenadas*/
-    margin-right: 25px; /*Dar espaciado hacia la derecha*/
+.contenedor{
+    max-width: 1280px;
+    width: 90%; /*Se define el ancho del contenedor*/
+    margin: auto;
+     
 }
 
 .menu{ 
@@ -22,10 +25,19 @@ li{
     font-weight: bold;
 }
 
+p { /*Se define el tamaño de fuente*/
+font-size: 26px; /*Se define el tamaño de fuente*/
+}
+
 .lista{
     display: flex; /*Nos permite ubicar un elemento a lado del otro*/
 }
 
+li{ 
+    
+    list-style: none;/*Quitar punto de listas desordenadas*/
+    margin-right: 25px; /*Dar espaciado hacia la derecha*/
+}
 
 
 .titular{
@@ -59,24 +71,14 @@ a{
 
                   /* Se realizaron */
 .lista a { 
-    background: hsl(210, 85%, 65%); /*Se define color de fondo del boton 210*/
-    padding: 6px 10px 6px 10px; /*Se define tamaño interno del boton*/
-    border-radius: 10px;  /*borde redondeado de un elemento*/
+    /*background: hsl(210, 85%, 65%); Se define color de fondo del boton 210*/
+    /*padding: 6px 10px 6px 10px; Se define tamaño interno del boton*/
+    /*border-radius: 10px;  borde redondeado de un elemento*/
 }
 
-header{
-    background: url(recursos/fondo12.jpg);
-    height: 100vh;
-    background-size: cover;
-}
 
-.contenedor{
-    max-width: 1280px;
-    width: 90%; /*Se define el ancho del contenedor*/
-    margin: auto;
-    
-   
-}
+
+
 
 /* ARRANCA SECCION SOBRE MI ---------------------------------------------*/
 /*display aline blok, me permite poner elementos en linea en bloke para poderlos trabajar
