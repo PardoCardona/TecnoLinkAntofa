@@ -10,6 +10,11 @@ header{
     height: 100vh;
     background-size: cover;
 }
+.Green{
+margin-top: 20px;
+border-radius: 20px;
+width: 16%;
+}
 
 .contenedor{
     max-width: 1280px;

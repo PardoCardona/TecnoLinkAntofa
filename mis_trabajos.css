@@ -26,6 +26,11 @@ li{
 .lista{
     display: flex; /*Nos permite ubicar un elemento a lado del otro*/
 }
+.Green{
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 16%;
+    }
 
 
 
