@@ -59,7 +59,15 @@ a{
     background: #5cb8ff; /*Se define color de fondo del boton*/
     padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
     border-radius: 10px;  /*borde redondeado de un elemento*/
-   
+    transition: 1s; /*Tiempo de transicion*/
+}
+
+.lista a:hover{
+    color: rgb(245, 8, 8); /*Color al pasar el muase*/
+    transition: 1s; /*Tiempo de transicion*/
+    transform: scale(1.3); /*Escala al que se va aumentar*/
+    display: inline-block; /*Convertir de estado en linea a bloque*/
+    
 }
 
  
