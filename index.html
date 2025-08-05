@@ -16,16 +16,24 @@
 100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1
 ,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+<!--Le dice al navegador que debe cargar un archivo
+ CSS externo para aplicar estilos a la página-->
    <link rel="stylesheet" href="recursos/owlcarousel/owl.carousel.min.css">
    <link rel="stylesheet" href="recursos/owlcarousel/owl.theme.default.min.css">
+   <!------------------------------------------------------------------------------>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
-                6.4.0/css/all.min.css"></script>
+   <!-- Importa la librería Font Awesome, que te permite usar íconos (ej: redes sociales, menús, flechas) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!------------------------------------------------------------------------------>
 
                 <!-- Este es el codigo para el responcive -->
-
    <meta name="viewport" content="width=device-width, user-scalable=no">
+   <!------------------------------------------------------------------------>
+
+   
 </head>
+
+
 
 <body>
                   <!--ENCABEZADO-->
@@ -36,8 +44,13 @@
             <div class="menu">
                 <img class="Green" src="recursos/green.jpg" alt="">
                 <!-- <p> C.P.H.S </p> -->
-                
-                <img class="menu-icon" src="recursos/menu.png" alt="">
+
+                <!--<img class="menu-icon" src="recursos/menu.png" alt="">--> 
+                <!--Menu hamburguesa-->
+                <div class="menu-icon">
+                  <i class="fa fa-bars"></i>
+                 </div>
+
 
                 <nav>   <!--Nav la navegacion--ul son listas desordenadas-->
                     <ul class="lista"> <!--Con las clases podemos llamar en css para modificar-->
@@ -46,32 +59,17 @@
                          <a href=mis_trabajos.html >Información adicional</a> 
                          <a href=mantenimiento.html >Mantención</a> 
                          <a href=noticias.html >Noticias</a>
-
-
-                        <!-- <a href=www.google.com >?Por que trabajaro conmigo¿</a> -->
-                        <!-- <a href=www.google.com target="_blank">Blog</a> -->
-                        <!-- <a href=www.google.com target="_blank">Servicios</a> -->
-                        <!-- <a href=www.google.com target="_blank">Contacto</a> -->
-                        <!-- <a href=www.google.com target="_blank">?Por que trabajaro conmigo¿</a> -->
-                        <!--ul son listas desordenadas-->
-                        <!--<li>Servicios</li>
-                        <li>Mis trabajos</li>
-                        <li>?Por que trabajaro conmigo¿</li>
-                        <li>Blog</li>
-                        <li>Contacto</li>-->
                     </ul>
                 </nav>      
             </div> 
 
             <div class="titular"> <!--Div se ocupa de contener elementos, para ser modificados en css-->
-                <h1>GREEN ENERGY</h1> <!--Encabezado principal-->
-                <H2>Terminal de electromovilidad. </H2> <!--Subutitulo-->
-
-                
-
+                <h1>TECNOLINK ANTOFA</h1> <!--Encabezado principal-->
+                <H2>Acsesorios de Estudio y Confort. </H2> <!--Subutitulo-->
+                   
                 <!--a es la etiqueta para los botones-->
                 <!-- <a href=https://maps.app.goo.gl/LvmXE5Xw26QGKsY76 target="_blank">COMO LLEGAR</a> -->
-                <a href=https://drive.google.com/file/d/1ECpDuQrWOckVu7IPBtzi7VAhrrBuKcsa/view?usp=sharing target="_blank">PRESENTACIÓN COMITÉ PARITARIO.</a>
+                <a href=https://drive.google.com/file/d/1ECpDuQrWOckVu7IPBtzi7VAhrrBuKcsa/view?usp=sharing target="_blank">QUIENES SOMOS.</a>
                 <!--target="-es el valor para que se habr en una nueva pestña</a>-->
                 <!--<a href="nosotros.html"></a> de esta forma nabegaemos hacia una pagina interna</a>-->
             </div>      
@@ -79,197 +77,296 @@
     </header>
 
                    <!--SECCION SOBRE MI-->
-    <section> <!--Separamos por secciones-->
-        <h3>COMITÉ PARITARIO DE HIGIENE Y SEGURIDAD.  </h3>  <!--Subtitulo-->
-        <div class="contenedor-sobremi">  <!--Div se ocupa de contener elementos, para ser modificados en css-->
-            <img class="imagen-sobremi" src="recursos/yo.jpg" alt="Richard Pardo" title="Richard Pardo">
-            <div class="contenedor-parrafo-y-boton">  <!--Div se ocupa de contener elementos, para ser modificados en css-->
-                <p> Un Comité Paritario de Higiene y Seguridad
-                     es un grupo de trabajo conformado por
-                      representantes de los empleadores y de los
-                       trabajadores, que tiene como objetivo
-                        principal velar por la salud y la seguridad
-                         en el lugar de trabajo. La creación de estos
-                          comités está regulada en muchos países por leyes
-                           específicas de seguridad laboral.</p>
-                
-                <a href=https://www.dt.gob.cl/legislacion/1624/articles-95516_recurso_1.pdf target="_blank">Código del trabajo</a> 
+    <section class="ventajas">
+    <div class="contenedor">
+        <h3>¿Por qué elegir <span class="marca">TecnoLink Antofa</span>?</h3>
+
+        <div class="grid-ventajas">
+            <div class="tarjeta-ventaja">
+                <div class="icono">
+                    <img src="recursos/envio.jpg" alt="Envío rápido">
+                </div>
+                <h4>Envío Rápido y Seguro</h4>
+                <p>Recibe tus productos en la puerta de tu casa con seguimiento y garantía de entrega.</p>
+            </div>
+
+            <div class="tarjeta-ventaja">
+                <div class="icono">
+                    <img src="recursos/garantia.jpg" alt="Garantía">
+                </div>
+                <h4>Garantía en Todos los Productos</h4>
+                <p>Compra con confianza. Todos nuestros artículos cuentan con garantía y soporte técnico especializado.</p>
+            </div>
+
+            <div class="tarjeta-ventaja">
+                <div class="icono">
+                    <img src="recursos/soporte1.jpg" alt="Atención personalizada">
+                </div>
+                <h4>Atención Personalizada</h4>
+                <p>Te asesoramos por WhatsApp para que elijas el producto perfecto para tus necesidades.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+
+     <!------------------------------------------------------>
+
+     <!--SECCION PRODUCTOS-->
+
+    <section class="productos">
+    <h3>Nuestros Productos</h3>
+    <div class="contenedor-productos">
+        <!-- Producto 1 -->
+        <div class="producto" 
+                data-id="1" 
+                data-nombre="Mouse Gamer" 
+                data-precio="40000" 
+                data-imagen="recursos/mouse.jpg">
+
+            <img src="recursos/mouse.jpg" alt="Mouse Gamer">
+            <h4>Mouse Gamer</h4>
+            <p class="precio">$40.000</p>
+
+            <!-- 🔹 Botón para el carrito -->
+             <button class="btn-carrito">Agregar al carrito</button> 
+            
+
+            <!-- 🔹 Botón actual para WhatsApp (lo puedes dejar si quieres ambas opciones) -->
+            <a href="#" class="btn-whatsapp">Pedir por WhatsApp</a>
+       </div>
+
+
+        <!-- Producto 2 -->
+        <div class="producto" 
+     data-id="2" 
+     data-nombre="Teclado Mecánico" 
+     data-precio="80000" 
+     data-imagen="recursos/teclado.jpg">
+
+  <img src="recursos/teclado.jpg" alt="Teclado Mecánico">
+  <h4>Teclado Mecánico</h4>
+  <p class="precio">$80.000</p>
+
+  <!-- Botón para carrito -->
+  <button class="btn-carrito">Agregar al carrito</button>
+
+  <!-- Botón existente para WhatsApp -->
+  <a href="#" class="btn-whatsapp">Pedir por WhatsApp</a>
+</div>
+
+
+        <!-- Producto 3 -->
+        <div class="producto" 
+     data-id="3" 
+     data-nombre="Auriculares Pro" 
+     data-precio="60000" 
+     data-imagen="recursos/auriculares.jpg">
+
+  <img src="recursos/auriculares.jpg" alt="Auriculares Pro">
+  <h4>Auriculares Pro</h4>
+  <p class="precio">$60.000</p>
+
+  <!-- Botón para carrito -->
+  <button class="btn-carrito">Agregar al carrito</button>
+
+  <!-- Botón existente para WhatsApp -->
+  <a href="#" class="btn-whatsapp">Pedir por WhatsApp</a>
+</div>
+
+    </div>
+</section>
+
+<!------------------------------------------------------>
+
+     <!--SECCION PRODUCTOS 2-->
+
+<section class="productos">
+  <h3>Productos económicos destacados</h3>
+  <div class="contenedor-productos">
+
+    <!-- Producto 1 -->
+    <div class="producto" 
+         data-id="4" 
+         data-nombre="Memoria USB 16GB" 
+         data-precio="5000" 
+         data-imagen="recursos/usb.jpg">
+      <img src="recursos/usb.jpg" alt="Memoria USB 16GB">
+      <h4>Memoria USB 16 GB</h4>
+      <p class="precio">$5.000</p>
+
+      <!-- Botón para carrito -->
+      <button class="btn-carrito">Agregar al carrito</button>
+
+      <!-- Botón existente para WhatsApp -->
+      <a href="#" class="btn-whatsapp">Pedir por WhatsApp</a>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto" 
+         data-id="5" 
+         data-nombre="Funda celular simple" 
+         data-precio="3000" 
+         data-imagen="recursos/funda.jpg">
+      <img src="recursos/funda.jpg" alt="Funda para celular económica">
+      <h4>Funda celular simple</h4>
+      <p class="precio">$3.000</p>
+
+      <!-- Botón para carrito -->
+      <button class="btn-carrito">Agregar al carrito</button>
+
+      <!-- Botón existente para WhatsApp -->
+      <a href="#" class="btn-whatsapp">Pedir por WhatsApp</a>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto" 
+         data-id="6" 
+         data-nombre="Soporte portátil ajustable" 
+         data-precio="10000" 
+         data-imagen="recursos/soporte.jpg">
+      <img src="recursos/soporte.jpg" alt="Soporte portátil ajustable">
+      <h4>Soporte portátil ajustable</h4>
+      <p class="precio">$10.000</p>
+
+      <!-- Botón para carrito -->
+      <button class="btn-carrito">Agregar al carrito</button>
+
+      <!-- Botón existente para WhatsApp -->
+      <a href="#" class="btn-whatsapp">Pedir por WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!------------------------------------------------------>
+
+     <!--SECCION OFERTAS 3-->
+
+<section class="ofertas">
+    <h3>Ofertas Especiales</h3>
+    <div class="contenedor-productos">
+
+        <!-- Producto Oferta -->
+        <div class="producto" 
+             data-id="7" 
+             data-nombre="USB 16GB" 
+             data-precio="5000" 
+             data-imagen="recursos/usb1.jpg">
+            <img src="recursos/usb1.jpg" alt="USB 16GB">
+            <h4>Memoria USB 16GB</h4>
+            <p class="precio">$5.000</p>
+
+            <!-- Botón para carrito -->
+            <button class="btn-carrito">Agregar al carrito</button>
+
+            <!-- Botón existente para WhatsApp -->
+            <a href="#" class="btn-whatsapp">Pedir por WhatsApp</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<!-- Modal de detalles -->
+<div id="modal-producto" class="modal">
+    <div class="modal-content">
+        <span class="cerrar">&times;</span>
+        <img id="modal-imagen" src="" alt="">
+        <h4 id="modal-nombre"></h4>
+        <p id="modal-descripcion"></p>
+        <p class="precio" id="modal-precio"></p>
+        <button class="btn-carrito">Agregar al carrito</button>
+    </div>
+</div>
+ <!-------------------------------------------------------------->
 
     <!--SECCION MIS SERVICIOS-->
 
-    <section> <!--Separamos por secciones-->
-     
-                <h3>Funciones</h3> <!--Subtitulo-->
-            <div class="contenedor-servicios">  <!--Div se ocupa de contener elementos, para ser modificados en css-->
-             
-                   <div class="servicio violeta">  <!--Div se ocupa de contener elementos, para ser modificados en css-->
-                        <h4>Identificación de Riesgos</h4>
-                        <p>Realizar inspecciones periódicas
-                             en el lugar de trabajo para
-                              identificar posibles riesgos
-                               para la salud y la seguridad
-                                de los trabajadores.</p>
-                                
-                            <img src="recursos/monitor.png" alt="">
-                    </div>
-
-                    <div class="servicio celeste">
-                        <h4>Evaluación de Riesgos</h4>
-                        <p>Analizar y evaluar los riesgos
-                             identificados para determinar
-                              su gravedad y la urgencia de las
-                               medidas a tomar.</p>
-                               
-                            <img src="recursos/monitor.png" alt="">
-                    </div>
-
-                    <div class="servicio violeta">
-                        <h4>Propuestas de Mejoras</h4>
-                        <p>Proponer medidas correctivas
-                             y preventivas para mejorar
-                              las condiciones de trabajo
-                               y reducir los riesgos
-                                identificados.</p>
-                                
-                            <img src="recursos/monitor.png" alt="">
-                    </div>
-
-                    <div class="servicio celeste">
-                        <h4>Investigación de Accidentes</h4>
-                        <p>Investigar los accidentes
-                             y enfermedades laborales
-                              para determinar sus causas
-                               y proponer medidas que eviten
-                                su recurrencia.</p>
-                                
-                            <img src="recursos/monitor.png" alt="">
-                    </div>
-
-                    <div class="servicio violeta">
-                        <h4>Capacitación y Formación</h4>
-                        <p>Promover y participar en programas
-                             de capacitación y formación
-                              para los trabajadores en temas
-                               de higiene y seguridad.</p>
-                               
-                            <img src="recursos/monitor.png" alt="">
-                    </div>
-
-                    <div class="servicio celeste">
-                        <h4>Difusión de Informaciónl</h4>
-                        <p>Informar y concienciar
-                             a los trabajadores sobre
-                              los riesgos en el lugar
-                               de trabajo y las medidas
-                                de prevención correspondientes.</p>
-                                
-                            <img src="recursos/monitor.png" alt="">
-                    </div>
-            </div>
    
-</section>
+
+<!----------------------------------------------------------------->
  
          <!--SECCION CAROUSEL-->
 <section> <!--Seccion para el carrusel-->
     <div class="contenedor">
-        <h3>Entorno laboral</h3> <!--Titulo-->
+        <h3>Productos</h3> <!--Titulo-->
         <div class="owl-carousel">
-            <div><img src="recursos/foto11.jpg" alt=""></div>
-            <div><img src="recursos/foto21.jpg" alt=""></div>
-            <div><img src="recursos/foto31.jpg" alt=""></div>
-            <div><img src="recursos/foto41.jpg" alt=""></div>
-            <div><img src="recursos/foto51.jpg" alt=""></div>
-           
+            <div><img src="recursos/Auriculares.jpg" alt=""></div>
+            <div><img src="recursos/mouse.JPG" alt=""></div>
+            <div><img src="recursos/teclado.jpg" alt=""></div>
+            <div><img src="recursos/soporte.jpg" alt=""></div>
+            <div><img src="recursos/funda.jpg" alt=""></div>        
           </div>
     </div>
 </section>
 
-     
+     <!--------------------------------------------------------------->
 
         <!--SECCION POR QUE TRABAJAR CON MIGO-->
-<section>
+<section class="beneficios">
     <div class="contenedor">
-        <h3>La importancia del Comité Paritario de Higiene y Seguridad.</h3> <!--Titulo-->
+        <h3>Beneficios de Comprar con Nosotros</h3>
 
         <div class="contenedor-porque">
-
             <div class="porque-singular">
-                <img src="recursos/velocidad.png" alt="">
-                <h4>Velocidad</h4>
-                <p>Proveer formación continua
-                     a los conductores sobre la
-                      importancia de respetar
-                       los límites de velocidad
-                        y las técnicas de conducción
-                         segura!</p>
+                <img src="recursos/velocidad.png" alt="Velocidad">
+                <h4>Envío Rápido</h4>
+                <p>Recibe tus productos en tiempo récord con nuestro servicio de envío express.</p>
             </div>
 
             <div class="porque-singular">
-                <img src="recursos/mantenimiento.png" alt="">
-                <h4>Mantenimiento</h4>
-                <p>Implementar un programa
-                de mantenimiento preventivo
-                que incluya revisiones periódicas
-                de sistemas críticos como frenos,
-                dirección, neumáticos
-                y sistemas
-                        eléctricos. </p>
+                <img src="recursos/mantenimiento.png" alt="Garantía">
+                <h4>Garantía y Soporte</h4>
+                <p>Todos nuestros productos cuentan con garantía y asistencia técnica especializada.</p>
             </div>
 
             <div class="porque-singular">
-                <img src="recursos/mobile2.png" alt="">
-                <h4>Soporte</h4>
-                <p> Asegurar que todas las
-                revisiones se realicen
-                de acuerdo con las especificaciones
-                del fabricante y regulaciones locales.</p>
-            </div>
-        </div>
-</div>
-</section>
-
-    <!--SECCION DE BLOG-->
-
-<section id="blog">
-    <div class="contenedor">
-        <h3>Blog</h3>  <!--Titulo-->
-        <div class="contenedor-publicaciones">
-
-            <div class="publicacion">
-                <img src="recursos/blog11.jpg" alt="">
-                <h4>Que es el comité paritario de higiene y seguridad.   </h4>
-                <p class="primer-parafo">
-                    En resumen, el "Comité Paritario de Higiene y Seguridad"
-                     es un grupo formado equitativamente
-                      por representantes de los empleadores
-                       y trabajadores, cuya función es velar
-                        por la salud y la seguridad en el entorno
-                         laboral, asegurando que se adopten y se
-                          mantengan prácticas adecuadas para prevenir
-                             enfermedades y accidentes.</p>
-                    <a href="">Leer mas <i class="fa-sharp fa-solid fa-arrow-right"> </i></a>
-            </div>
-
-            <div class="publicacion publicacion-segunda">
-                <img src="recursos/blog21.jpg" alt="">
-                <h4>Funciones del comité paritario de higiene y seguridad.</h4>
-                <p>Estas funciones permiten al
-                     CPHS desempeñar un rol crucial
-                      en la creación y mantenimiento
-                       de un ambiente de trabajo seguro
-                        y saludable, protegiendo la
-                         integridad física y mental de
-                          los trabajadores y promoviendo
-                           una cultura de prevención en la
-                            empresa..</p>
-                    <a href="">Leer mas <i class="fa-sharp fa-solid fa-arrow-right"> </i></a>
+                <img src="recursos/soporte.png" alt="Atención">
+                <h4>Atención al Cliente</h4>
+                <p>Soporte personalizado para resolver cualquier duda o inconveniente rápidamente.</p>
             </div>
         </div>
     </div>
 </section>
+
+
+   <section id="blog">
+    <div class="contenedor">
+        <h3>Consejos y Novedades</h3>
+        <div class="contenedor-publicaciones">
+
+            <div class="publicacion">
+                <img src="recursos/blog-mouse.jpg" alt="Mouse Gamer">
+                <h4>Cómo elegir el mejor Mouse Gamer</h4>
+                <p class="primer-parafo">
+                    Descubre las características principales que debes considerar 
+                    para elegir un mouse gamer de alto rendimiento sin gastar de más.
+                </p>
+                <a href="#">Leer más <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="publicacion publicacion-segunda">
+                <img src="recursos/blog-oficina.jpg" alt="Accesorios Oficina">
+                <h4>Accesorios imprescindibles para tu oficina</h4>
+                <p>
+                    Desde soportes ergonómicos hasta teclados mecánicos, 
+                    conoce los accesorios que mejoran tu productividad y comodidad.
+                </p>
+                <a href="#">Leer más <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!---------------------------------------------------------------------------->
+<!--SECCION QUE ESPERAS-->
 
 <section id="que-esperas">
     <div class="contenedor">
@@ -279,11 +376,11 @@
     </div>
 </section>
 
-<section id="whatsapp">
-    <a href="https://wa.me/+56989149422">
-    <img src="recursos/whatsapp.png" alt=""></a>
-</section>
+<!-------------------------------------------------------------------------->
 
+<!--SECCION DE WHATSAPP-->
+
+<!----------------------------------------------------------------------------->
 
 <!-- <section id="instagram"> -->
     <!-- <a href="https://instagram.com/soporte_83?igshid=ZGUzMzM3NWJiOQ==" > -->
@@ -291,38 +388,71 @@
 <!-- </section> -->
 
 
+<!------------------------------------------>
+   <!--Codigo para el carrusel-->
 
-   
-
-<script src="recursos/owlcarousel/jquery.min.js"></script> <!--Codigo para el carrusel-->
+<script src="recursos/owlcarousel/jquery.min.js"></script> 
 <script src="recursos/owlcarousel/owl.carousel.min.js"></script> <!--Codigo para el carrusel-->
 
-<script> /*Scrip para el carousel*/
-   $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    }
-})
 
-/*Scrip para el responsive para el menu de navegacion*/
+<!------------------------------------------>
+<!--js del carrucel y el menu hamburguesa-->
 
-$('.menu-icon').click(function(){
+<script src="recursos/js/menu_carrucel.js"></script>
 
-    $('header nav').slideToggle(); /*Es una funcion para ocultar y aparecer el menu de forma deslizante*/
-})
 
-</script>
+<!------------------------------------------>
+
+<!--3️⃣ JavaScript – Funcionalidad de modal DE PRODUCTOS-->
+   
+<script src="recursos/js/modal.js"></script>
+
+<!-- ------------------------------------------------->
+<!-- para las targetas de productos de pedidos por  whastsasp-->
+
+<script src="recursos/js/app.js"></script>
+
+<!-- ------------------------------------------------->
+<!-- para darle movimiento a la imagen y menu principal-->
+<script src="recursos/js/efectos_menu_hero.js"></script>
+
+<!-- ------------------------------------------------->
+<!-- 🛒 Carrito de Compras -->
+<script src="recursos/js/carrito.js"></script>
+<!-- ------------------------------------------------->
+
+<!-- ------------------------------------------------->
+<!-- 🛒 Carrito de Compras flotante -->
+<script src="recursos/js/carrito_flotante.js"></script>
+<!-- ------------------------------------------------->
+
+
+
+<!-- ------------------------------------------------->
+<!-- 🛒 Carrito de Compras -->
+
+<div id="carrito" class="carrito">
+  <h3>🛒 Carrito de Compras</h3>
+  <ul id="lista-carrito"></ul>
+  <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+  <button id="vaciar-carrito" class="btn-vaciar">Vaciar carrito</button>
+  <button id="finalizar-whatsapp" class="btn-whatsapp-final">Finalizar por WhatsApp</button>
+</div>
+
+<!-- ------------------------------------------------->
+<!-- 🔹 Botón flotante del carrito (solo móviles) -->
+<div id="btn-flotante-carrito" class="btn-flotante-carrito">
+    🛒
+    <span id="contador-carrito">0</span>
+</div>
+
+
+
+
+
+</body>
+</html>
+
 
 </body>
 </html>

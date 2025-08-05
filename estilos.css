@@ -2,87 +2,141 @@
 
 
 body{
+    /*🔹 Pertenece a:
+    1️⃣ Estilos Generales
+Toda la página (index.html)
+📌 Qué hace:
+Define la fuente para todo el sitio.
+Elimina márgenes y rellenos del navegador.*/
     font-family: 'Poppins';
     /*font-family: 'Poppins'; Se difine el tipo de fuente fuente*/
     margin: 0;
     padding: 0;
 }
-
+/*----------------------------------------------------*/
 header{
+    /* Qué hace:
+    2️⃣ Encabezado y Fondo
+Coloca la imagen de fondo (fondo12.jpg) en el encabezado.
+Ajusta la altura a toda la ventana.
+background-size: cover; asegura que la imagen cubra todo el espacio sin deformarse*/
     background: url(recursos/fondo12.jpg);
     height: 100vh;
     background-size: cover;
+/*-----------------------------------------------------*/
 }
+/*🔹 Pertenece a:
+3️⃣ Logo
+html
+logo parte izquierda
+<img class="Green" src="recursos/green.jpg">
+📌 Qué hace:
+Separa el logo del borde superior.
+Redondea las esquinas.
+Ajusta el ancho del logo al 16% del contenedor*/
 .Green{
 margin-top: 20px;
 border-radius: 20px;
 width: 16%;
 }
-
+/*--------------------------------------------------------*/
 .contenedor{
+    /*🔹 Pertenece a:
+    4️⃣ Contenedor
+<div class="contenedor"> ... </div>
+📌 Qué hace:
+Limita el ancho máximo del contenido.
+Centra todo el contenido horizontalmente.*/
     max-width: 1280px;
     width: 90%; /*Se define el ancho del contenedor*/
     margin: auto;
      
 }
-
+/*---------------------------------------*/
 .menu{ 
+    /*5️⃣ Menú de navegación
+    <div class="menu">
+   ...
+   <nav>
+      <ul class="lista">
+         <li><a>...</a></li>
+      </ul>
+   </nav>
+</div>
+📌 Qué hace:
+Muestra logo y menú uno al lado del otro.
+Quita los puntos de las listas*/
     display: flex; /*Nos permite ubicar un elemento a lado del otro*/
     justify-content: space-between; /*Justificar el contenido*/
     align-items: center; /*Alineamos hacia el centro*/
     font-weight: bold;
 }
 
+.lista{
+    /*Nos permite ubicar un elemento a lado del otro*/
+    display: flex;
+}
+
+li{ 
+    /*Quitar punto de listas desordenadas*/
+    list-style: none;
+    /*Dar espaciado hacia la derecha*/
+    margin-right: 25px; 
+}
+
+/*----------------------------------------------------*/
 p { /*Se define el tamaño de fuente*/
 font-size: 26px; /*Se define el tamaño de fuente*/
 }
 
-.lista{
-    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
-}
-
-li{ 
-    
-    list-style: none;/*Quitar punto de listas desordenadas*/
-    margin-right: 25px; /*Dar espaciado hacia la derecha*/
-}
-
-
-.titular{
-    text-align: center; /*De esta forma alineamos el texto*/
-    margin-top: 200px; /*Bajamos los elementos*/
-}
-
-h1{
-    font-size: 60px; /*Se define el tamaño de fuente*/
-    margin: 0; /*Eliminamos el margen a todos los lados*/
-}
-
-h2{
-    font-size: 25px;/*Se define el tamaño de fuente*/
-    margin-bottom: 40px;/*lo podemos utilizar para bajar elementos, dando espaciado hacia abajo inteno, 
-    en este caso nos vaja el boton*/
-}
-
+/*-------------------------------------------------------*/
+ /*6️⃣ Enlaces del menú
+ */
 a{
     list-style: none;/*Quitar punto de listas desordenadas*/
     text-decoration: none;/*De esta forma quitamos el decorado a los enlaces*/
-    color: black; /*Cambiar de color al texto del enlace*/
+    color: rgb(1, 52, 21); /*Cambiar de color al texto del enlace*/
     margin-right: 25px; /*Dar espaciado hacia la derecha*/
     border-radius: 10px;  /*borde redondeado de un elemento*/
     font-size: 14px; /*Se define el tamaño de fuente*/
-    background: hsl(210, 85%, 65%); /*Se define color de fondo del boton 210*/
+    background: rgb(0, 179, 119); /*Se define color de fondo del boton 210*/
     padding: 10px 10px 10px 10px; /*Se define tamaño interno del boton*/
     transition: 1s;  /*Tiempo de transicion*/
    
 }
 
 .lista a:hover{
-    color: rgb(245, 8, 8); /*Color al pasar el muase*/
+    color: rgb(248, 251, 252); /*Color al pasar el muase*/
     transition: 1s; /*Tiempo de transicion*/
     transform: scale(1.3); /*Escala al que se va aumentar*/
     display: inline-block; /*Convertir de estado en linea a bloque*/
 }
+
+/*---------------------------------------------------------------*/
+
+
+/*7️⃣ Títulos y Texto Principa
+*/
+
+.titular{
+    text-align: center; /*De esta forma alineamos el texto*/
+    margin-top: 100px; /*Bajamos los elementos*/
+}
+
+h1{
+    font-size: 45px; /*Se define el tamaño de fuente*/
+    margin: 0; /*Eliminamos el margen a todos los lados*/
+    color: #fff;
+}
+
+h2{
+    font-size: 25px;/*Se define el tamaño de fuente*/
+    margin-bottom: 40px;/*lo podemos utilizar para bajar elementos, dando espaciado hacia abajo inteno, 
+    en este caso nos vaja el boton*/
+    color: #fff;
+}
+
+/*---------------------------------------------------------------*/
 
 
                   /* Se realizaron */
@@ -92,7 +146,178 @@ a{
     /*border-radius: 10px;  borde redondeado de un elemento*/
 }
 
+/* ====== SECCIÓN PRODUCTOS ====== */
+/* Centrar títulos de las secciones */
 
+/* Ajuste del título "¿Por qué elegir TecnoLink Antofa?" en móviles */
+@media (max-width: 480px) {
+    .ventajas h3 {
+        font-size: 24px; /* Reduce tamaño en móviles */
+        line-height: 1.3;
+        word-wrap: break-word; /* Permite romper palabras largas */
+        text-align: center; /* Asegura centrado */
+        padding: 0 10px; /* Evita que se pegue a los bordes */
+    }
+}
+
+
+.productos h3,
+#blog h3,
+section .contenedor h3 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto 30px auto;
+    font-size: 32px;
+    font-weight: 600;
+    color: #0D1B2A;
+}
+
+
+.productos {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9fafc;
+}
+
+.productos h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0D1B2A;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.producto {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 179, 119, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.precio {
+    font-size: 18px;
+    color: #00B377;
+    font-weight: bold;
+}
+
+.btn-carrito {
+    background: #00B377;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-carrito:hover {
+    background: #009966;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #1EBE57;
+}
+
+
+/*------------------------------------------------------*/
+
+/* ====== MODAL PRODUCTO ====== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: aparecer 0.3s ease;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cerrar {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+    color: #555;
+}
+
+.cerrar:hover {
+    color: red;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+/*SECCION OFERTAS*/
+.ofertas {
+    background: #fffde7; /* Fondo amarillo claro */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+/*------------------------------------------------------------*/
 
 
 
@@ -100,30 +325,76 @@ a{
 /*display aline blok, me permite poner elementos en linea en bloke para poderlos trabajar
 O podemos utilizar margin boton al parrafo final para qeu baje el elemento*/
 
+/*-------------------------------------------------------*/
 
-h3{
-   text-align: center; /*De esta forma alineamos el texto*/
-   font-size: 55px; /*Se define el tamaño de fuente*/
-   font-weight: bold;   /*Se determina la negrita--bold negrita-*/
+.ventajas {
+    background: #ffffff;
+    padding: 80px 20px;
 }
 
-.contenedor-sobremi{
-    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
-    justify-content: space-around; /*Justificar el contenido*/
-    align-items: center; /*Alineamos hacia el centro-uno al lado del otro*/
+.ventajas h3 {
+    text-align: center;
+    font-size: 36px;
+    color: #0D1B2A;
+    margin-bottom: 50px;
 }
 
-.contenedor-parrafo-y-boton{
-    width: 50%; /*Se define el ancho del contenedor- para poder separar en ancho*/
+.ventajas h3 .marca {
+    color: #00B377;
 }
 
-.contenedor-parrafo-y-boton p{ /*la etiqueta p en esta clase solo cambiara el tamaño de fuente*/
-   font-size: 20px;
+.grid-ventajas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.parrafo-final{
-    margin-bottom: 30px;
+.tarjeta-ventaja {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.tarjeta-ventaja:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 179, 119, 0.2);
+}
+
+.icono img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-ventaja:hover .icono img {
+    transform: scale(1.2);
+}
+
+.tarjeta-ventaja h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #0D1B2A;
+}
+
+.tarjeta-ventaja p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .ventajas h3 {
+        font-size: 28px;
+    }
+}
+
 
 /*ARRANCA SECCION SERVICIOS----------------------*/
 
@@ -163,7 +434,10 @@ h3{
     font-size: 20px;  /*Se define el tamaño de fuente*/
     height: 200px; /*De esta forma los iconos tienen una altura fija.*/
 }
+/*-----------------------------------------------------------------------*/
 
+/*2️⃣ CSS del Carrusel
+*/
 span{
     font-size: 80px; /*Es para que crescan las flechas del carousel*/
     color: blue;
@@ -173,79 +447,180 @@ span{
     text-align: center; /*Para centrar las felchas del carousel*/
 }
 
+
+/*-----------------------------------------------------------------*/
+
 /* ARRANCA SECCION POR QUE  TRABAJAR CONMIGO --------------------------------------------------- */
 
-.contenedor-porque{
-    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
-    justify-content: space-around; /*Me permite separar en este caso las columnas una de otra */
-    text-align: center; /*Me permite centrar el texto */
+/* ====== SECCIÓN BENEFICIOS ====== */
+.beneficios {
+    padding: 60px 20px;
+    background: #f9fafc;
 }
 
-.contenedor-porque h4{
-    margin: 0; /*Se deja el margen en 0, para quitar los espacios */
-    font-size: 20px; /*Tamaño de fuente */
+.beneficios h3 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #0D1B2A;
 }
 
-.contenedor-porque p{
-    font-size: 16px; /*Tamaño de fuente */
-    line-height: 28px;  /*Se define el alto de linea en los parrafos */
-} 
-
-.porque-singular{
-    width: 95%;  /*Se detemina el ancho de los elemento que van  por fila, y nos permite saber cauntos elementos se vusualizaen en la fila*/
+.contenedor-porque {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    background: #f9fafc;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
+
+.porque-singular {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.porque-singular:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 179, 119, 0.2);
+}
+
+.porque-singular img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.porque-singular:hover img {
+    transform: scale(1.2);
+    filter: hue-rotate(30deg);
+}
+
+.porque-singular h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0D1B2A;
+}
+
+.porque-singular p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .contenedor-porque {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+    .porque-singular {
+        width: 90%;
+    }
+}
+
+/*------------------------------------------------------------*/
 
 /* ARRANCA SECCION BLOG */
 
-#blog{
-    background: #F9FAFC; /*Color de fondo*/
-    padding-top: 50px; /*Nos da un espacion en la parte superior*/
-    padding-bottom: 50px;
+/* ARRANCA SECCIÓN BLOG */
+/* ARRANCA SECCIÓN BLOG */
+#blog {
+    background: #F9FAFC;
+    padding: 50px 0;
 }
 
-.contenedor-publicaciones{
-    display: flex; /*Nos permite ubicar un elemento a lado del otro*/
-    justify-content: space-around; /*Me permite separar en este caso las columnas una de otra */
+.contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.publicacion{ 
-    width: 30%;  /*Se detemina el ancho de los elemento que van  por fila, y nos permite saber cauntos elementos se vusualizaen en la fila*/
-    box-shadow: 1px 1px 14px #ccc;  /*Nos da el efecto de sombra*/
-    padding-bottom: 20px;
+.publicacion {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+
+    /* 👇 Para igualar altura de tarjetas */
+    display: flex;
+    flex-direction: column;
 }
 
-#blog img{
-    width: 100%; /*Nos ubica las imagenes al 100% de todo el div*/
+/* 🔑 Igualamos la altura de todas las imágenes */
+.publicacion img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-#blog h4{
-    font-size: 23px; /*Tamaño de fuente*/
-    margin: 0; /*Quitar su margen por defecto*/
-    padding: 20px ; /*Le ponemos pading a todos los lados*/
-   
+.publicacion:hover img {
+    transform: scale(1.05);
 }
 
-#blog p{
-    color: #5a6169; /*Color de texto*/
-    line-height: 24px; /*Separamos las lineas de los parrafos, altura*/
-    font-size: 16px; /*Tamaño de fuente*/
-    padding:10px 20px 20px 20px;  /*Le ponemos pading a todos los lados--Color verde*/
-    margin: 0;  /*Quitar su margen por defecto -Color naranja*/
+#blog h4 {
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
 }
 
-#blog a{
-    display: inline-block; /*Cambiamos de elememto en linea a elemento en bloque*/
-    margin-left: 20px; /*Margen a la izquierda, para ponerlo al mismo nivel del texto*/
+#blog p {
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 0 20px 20px;
+    margin: 0;
 }
 
-.publicacion-segunda img{
-    height: 223px; /*Se define el alto de la imagen para que este al igual tamaño que la otra*/
-
+/* 🔑 Contenedor flexible para texto y botón */
+.publicacion-content {
+    flex: 1;                     /* Empuja el botón al fondo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.primer-parafo{
-    padding: 0px 20px 20px 20px !important;
+/* Botón alineado abajo */
+#blog a {
+    display: block;
+    margin: 10px 20px 20px;
+    color: #333;
+    margin-top: auto;
 }
+
+.primer-parafo {
+    padding: 0 20px 20px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .publicacion {
+        width: 100%;
+    }
+}
+
+
+
+/* --------------------------------------------------------------------*/
+/* ARRANCA SECCION WHATSAPP */
+#whatsapp a{
+    background: none;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+}
+
+/* ----------------------------------------------------------------------*/
 
 /* ARRANCA SECCION FINAL */
 
@@ -282,16 +657,12 @@ span{
 
 }
 
-#whatsapp a{
-    background: none;
-    position: fixed;
-    top: 85%;
-    right: 1%;
-}
+/*ICONO HAMBURGUESA MENU DE NAVEGACION */
 
 .menu-icon{
     display: none; /*Se oculta un elemento, en este caso el icono del menu*/
 }
+/*ICONO HAMBURGUESA MENU DE NAVEGACION */
 
 /* Este es el codigo para el responsive para el menu de navegacion */
 
@@ -313,8 +684,11 @@ span{
    .menu-icon{
     display: block;
     width: 25px;
+    color: #fff;
 }
 
+/*-----------------------------------------------------------*/
+/*Responsive*/
 .titular{
     margin-top: 54px;
 }
@@ -326,6 +700,8 @@ h1{
 h2{
     font-size: 19px;
 }
+
+
     /*Seccion sobr me*/
 .contenedor-sobremi{
     flex-direction: column; /*Para que los elementos esten uno debajo del otro*/
@@ -399,3 +775,291 @@ h3{
         width: 62%;
     }
 }
+
+/* Redondea la imagenes del carrucel */
+
+.owl-carousel img {
+    border-radius: 12px;  /* Ajusta el valor para más o menos redondeo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+    transition: transform 0.3s ease;
+}
+
+.owl-carousel img:hover {
+    transform: scale(1.05); /* Efecto de zoom suave al pasar el mouse */
+}
+
+/*----------------------------------------------------------*/
+
+
+/* 🔹 Menú fijo con fondo paa la imagen de inicio */
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 179, 119, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔹 Animación de entrada del hero */
+.titular {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.titular.animar-titular {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔹 Parallax y transición suave */
+header {
+    background: url(recursos/fondo12.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    transition: background-size 0.3s ease, filter 0.3s ease;
+}
+
+/*-------------------------------*/
+
+/* 🔹 Menú oculto por defecto en móviles menu hamburguesa */
+/* ===== MENÚ HAMBURGUESA PROFESIONAL ===== */
+/* ===== MENÚ HAMBURGUESA PROFESIONAL ===== */
+@media (max-width: 800px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.85); /* Vidrio */
+        backdrop-filter: blur(10px); /* Difuminado */
+        padding: 20px 0;
+        z-index: 999;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        animation: slideDown 0.4s ease forwards;
+    }
+
+    /* Cuando el menú se abre */
+    nav.menu-abierto {
+        display: flex;
+    }
+
+    /* Enlaces del menú */
+    nav a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        color: #1a1a1a; /* Negro elegante */
+        font-size: 17px;
+        font-weight: 500;
+        background: none;
+        margin: 0;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Hover moderno */
+    nav a:hover {
+        background: rgba(0, 179, 119, 0.08);
+        color: #00b377;
+    }
+
+    /* Icono hamburguesa */
+    .menu-icon {
+        display: block;
+        font-size: 26px;
+        color: #ffffff; /* ✅ Icono blanco */
+        cursor: pointer;
+        position: relative;
+        z-index: 1001;
+        transition: transform 0.3s ease;
+    }
+
+    /* Animación de apertura */
+    @keyframes slideDown {
+        from {
+            transform: translateY(-30px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+
+
+    /* ===== ICONO HAMBURGUESA EN ANIMACIÓN ===== */
+    .menu-icon.abrir i:before {
+        content: "\f00d"; /* Font Awesome icon 'X' */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: #ffffff; /* ✅ Mantener blanco */
+    }
+}
+/*--------------------------------------------------------------------------*/
+/* ===== 🛒 Carrito de Compras ===== */
+/* ===== 🛒 Carrito de Compras Compacto ===== */
+.carrito {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    max-width: 220px;
+    width: 85%;
+    z-index: 999;
+    font-family: 'Poppins';
+    font-size: 13px;
+}
+
+.carrito h3 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.carrito ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 8px 0;
+}
+
+.carrito li {
+    font-size: 12px;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* 🔹 Doble de tamaño para el total */
+#total-carrito {
+    font-size: 28px;    /* 14px → 28px */
+    font-weight: bold;
+    color: #00B377;     /* Opcional: resaltar el total */
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.btn-vaciar,
+.btn-whatsapp-final {
+    width: 100%;
+    margin-top: 6px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.btn-vaciar {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.btn-vaciar:hover {
+    background: #e60000;
+}
+
+.btn-whatsapp-final {
+    background: #25D366;
+    color: white;
+}
+
+.btn-whatsapp-final:hover {
+    background: #1EBE57;
+}
+
+@media (max-width: 768px) {
+    .carrito {
+        top: auto;
+        bottom: 10px;
+        right: 10px;
+        width: 90%;
+        max-width: 95%;
+        font-size: 12px;
+    }
+}
+
+/* ===== 🔹 ---------------------------------------===== */
+
+/* ===== 🔹 Botón flotante del carrito ===== */
+.btn-flotante-carrito {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Oculto por defecto */
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.btn-flotante-carrito:hover {
+    background: #1EBE57;
+}
+
+/* 🔹 Contador del carrito */
+#contador-carrito {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+/* Mostrar solo en móviles */
+@media (max-width: 768px) {
+    .btn-flotante-carrito {
+        display: flex;
+    }
+
+    /* 🔹 Ocultar el carrito por defecto en móvil */
+    .carrito {
+        display: none;
+    }
+}
+
+/* Centrar botones dentro de cada producto */
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔹 Centra horizontalmente */
+    justify-content: center;
+    text-align: center;
+}
+
+.producto button,
+.producto .btn-whatsapp {
+    display: block;
+    margin: 5px auto;       /* 🔹 Centrar y dar espacio entre botones */
+    width: 80%;             /* 🔹 Ajusta el ancho (puedes cambiarlo) */
+    text-align: center;
+}
+
+
+
+
+
