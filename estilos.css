@@ -1130,6 +1130,32 @@ header {
     cursor: pointer;
   }
 }
+/* ===== Evitar franja blanca en menú móvil ===== */
+@media (max-width: 800px) {
+  nav {
+    width: 100% !important;       /* Ocupa todo el ancho */
+    left: 0 !important;
+    right: 0 !important;
+    overflow-x: hidden;           /* Previene scroll horizontal */
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li, nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  body {
+    overflow-x: hidden; /* Evita que el body cree espacio extra */
+  }
+}
+
 
 
 
