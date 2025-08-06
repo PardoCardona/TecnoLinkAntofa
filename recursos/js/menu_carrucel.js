@@ -18,3 +18,13 @@ $(document).ready(function() {
         $('header nav').slideToggle();
     });
 });
+
+const menuToggle = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+  menuToggle.querySelector('i').classList.toggle('fa-bars');
+  menuToggle.querySelector('i').classList.toggle('fa-times');
+});
+

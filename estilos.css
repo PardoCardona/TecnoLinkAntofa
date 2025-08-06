@@ -20,9 +20,9 @@ header{
 Coloca la imagen de fondo (fondo12.jpg) en el encabezado.
 Ajusta la altura a toda la ventana.
 background-size: cover; asegura que la imagen cubra todo el espacio sin deformarse*/
-    background: url(recursos/fondo12.jpg);
+    background: url('recursos/fondo12.jpg') center center / cover no-repeat;
     height: 100vh;
-    background-size: cover;
+    background-attachment: fixed;
 /*-----------------------------------------------------*/
 }
 /*🔹 Pertenece a:
@@ -34,11 +34,18 @@ logo parte izquierda
 Separa el logo del borde superior.
 Redondea las esquinas.
 Ajusta el ancho del logo al 16% del contenedor*/
-.Green{
-margin-top: 20px;
-border-radius: 20px;
-width: 16%;
+.Green {
+  margin-top: 10px;
+  border-radius: 12px;
+  width: 140px; /* Tamaño fijo para evitar deformación */
+  max-width: 40%; /* En pantallas pequeñas se ajusta */
+  transition: transform 0.3s ease;
 }
+
+.Green:hover {
+  transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}
+
 /*--------------------------------------------------------*/
 .contenedor{
     /*🔹 Pertenece a:
@@ -1058,6 +1065,72 @@ header {
     width: 80%;             /* 🔹 Ajusta el ancho (puedes cambiarlo) */
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    header {
+        background-position: center top;
+        background-attachment: scroll;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .hero-text a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* ===== MENÚ EN MÓVILES ===== */
+@media (max-width: 800px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    display: block;
+    transition: background 0.3s ease;
+  }
+
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
 
 
 
